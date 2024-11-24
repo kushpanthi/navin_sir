@@ -1,0 +1,99 @@
+/* CSS for Achievements Section */
+.achievements-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #2D3436; /* Matches the rest of the site */
+    color: #FFFFFF; /* White text */
+}
+
+.achievements-container h2 {
+    font-size: 2.5rem;
+    color: #FF6F61; /* Primary color */
+    margin-bottom: 1rem;
+}
+
+.achievements-container p {
+    font-size: 1.2rem;
+    color: #DADFE1; /* Lighter gray for subtitle */
+    margin-bottom: 3rem;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.achievement-card {
+    background: #191e21;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.achievement-card h3 {
+    font-size: 1.5rem;
+    color: #FFA177; /* Secondary color */
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.achievement-card span {
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.achievement-card p {
+    font-size: 1rem;
+    color: #FFFFFF; /* White text */
+    margin-top: 0.5rem;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* View All Achievements Button CSS */
+.view-all-btn-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.view-all-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    background-color: #ff6f61; /* Coral-like color */
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 30px; /* Rounded button corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.view-all-btn i {
+    font-size: 1.2rem; /* Icon size */
+}
+
+.view-all-btn:hover {
+    background-color: #ff856d; /* Slightly lighter on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Slightly larger shadow on hover */
+}
+
+.view-all-btn:active {
+    transform: translateY(0); /* Remove lift effect when clicked */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Restore original shadow */
+}
